@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1 id="titulo">Cadastro Profissional</h1>
+        <p id="subtitulo">Complete suas informações</p>
+    </div>
+
+    <form action="">
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome"  required>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="Email"><strong>E-mail</strong></label>
+            <input type="Email" name="Email" id="Email" placeholder="exemplo@email.com">
+        </div>
+
+        <div class="campo">
+            <label for="">Qual seu nível de escolaridade?</label>
+            <label for="">
+                <input type="radio" name="nivel" value="fundamental">Fundamental
+            </label>
+            <label for="">
+                <input type="radio" name="nivel" value="Medio">Médio
+            </label>
+            <label for="">
+                <input type="radio" name="nivel" value="Superior">Superior
+            </label>
+        </div>
+
+        <div class="campo">
+            <label for="status">Qual o status atual?</label>
+            <select name="status" id="status">
+                <option selected disabled value=""> Escolha</option>
+                <option value="">Completo</option>
+                <option value="">Incompleto</option>
+                <option value="">Cursando</option>
+            </select>
+        </div>
+
+        <fieldset class="grupo">
+            <div id="check">
+                <label for="">Selecione as áreas de atuação que se interessa:</label><br>
+                <input type="checkbox" id="area1" name="area1" value="Engenharias e Exatas">
+                <label for="Engenharia e Exatas">Engenharias e Exatas</label>
+                <input type="checkbox" id="area2" name="area2" value="Humanas">
+                <label for="Humanas">Humanas</label>
+                <input type="checkbox" id="area3" name="area3" value="Tecnologia">
+                <label for="Tecnologia">Tecnologia</label>
+                <input type="checkbox" id="area4" name="area4" value="Saúde">
+                <label for="saúde">Saúde</label>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <br>
+            <label style="font-weight: 700;" for="experiencia">Conte um pouco da sua experiência:</label>
+            <textarea name="experiencia" id="experiencia" cols="45" rows="2.8"></textarea>
+        </div>
+        <button class="botao" type="submit">Concluído</button>
+    </form>
+</body>
+</html>
